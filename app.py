@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("Predicting the ingredients of input food image")
 allergen = st.text_input("Enter the allergen you want to avoid (give commas seprated values)", "milk,egg")
-uploaded_file = st.file_uploader("Choose an image...", type="jpg")
+uploaded_file = st.file_uploader("Choose an image...", type="jpg, jpeg, png")
 
 if uploaded_file is not None:
     st.write("Analyzing...")
